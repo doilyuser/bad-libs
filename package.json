@@ -23,7 +23,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index/server", 
+    "dev": "nodemon index/server --ignore */data.json", 
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "test": "jest --watchAll",
+    "format": "prettier -w '**/*.{js,jsx,ts,tsx}'"
   },
   "repository": {
     "type": "git",
