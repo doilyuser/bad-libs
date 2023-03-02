@@ -2,28 +2,69 @@ html {
   background-color: #9a606c;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.theme-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
 h1 {
   color: #fffbf1;
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 100px;
+  padding: 20px, auto, 20px, auto;
 }
 
 h2 {
   color: #fffbf1;
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  padding: 20px, auto, 20px, auto;
 }
 
 p {
   color: #fffbf1;
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  padding: 20px, auto, 20px, auto;
 }
 
 a {
   color: #fffbf1;
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  padding: 20px, auto, 20px, auto;
 }
 
 nav {
+  text-align: center;
+  padding: 20px, auto, 20px, auto;
+}
+
+#nav-btn {
+  background-color: #783d4b;
   color: #fffbf1;
   text-align: center;
-  list-style-position: inside;
+  font-family: 'Source Code Pro', monospace;
+  border: 0px;
+  width: 80px;
+  height: 30px;
 }
+
+.img-circle {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+  padding: 20px, auto, 20px, auto;
+}
+
