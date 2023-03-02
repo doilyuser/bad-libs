@@ -16,6 +16,10 @@ server.set('views', __dirname + '/views')
 
 // Your routes/router(s) should go here
 
-server.use('/theme', router)
+// server.use('/theme', router)
+
+server.get('/', (req, res) => {
+  res.send('hi mom!')
+})
 
 module.exports = server
