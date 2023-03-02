@@ -17,6 +17,8 @@ router.post('/:theme', (req, res) => {
       const theme = parseData.find((e) => {
         e.theme === req.params.theme
       })
+
+      //change these to match data json
       const { noun, verb, adjective, word } = req.body
 
       theme.noun = noun
