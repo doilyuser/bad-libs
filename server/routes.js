@@ -6,7 +6,7 @@ const router = express.Router()
 
 const data = __dirname + '/data/data.json'
 
-router.get('/spooky', (req, res) => {
+router.get('/:theme', (req, res) => {
   res.render('create')
 })
 
@@ -29,15 +29,16 @@ router.post('/:theme', (req, res) => {
       fs.writeFile(__dirname + '/data/data.json', newData)
     })
     .then(() => {
-      res.redirect(302, `/story/${theme}`)
+      // res.redirect(302, `/story/${theme}`)
+      res.send('working redirect :)')
     })
     .catch((err) => {
       console.log(err.message)
     })
 })
 
-router.get('/spooky', (req, res) => {
-  res.render('story')
-})
+// router.get('/:theme', (req, res) => {
+//   res.render('story')
+// })
 
 module.exports = router
