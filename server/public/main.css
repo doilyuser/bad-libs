@@ -1,3 +1,29 @@
 html {
-  background-color: rgb(255, 255, 255);
+  background-color: #9a606c;
+}
+
+h1 {
+  color: #fffbf1;
+  text-align: center;
+}
+
+h2 {
+  color: #fffbf1;
+  text-align: center;
+}
+
+p {
+  color: #fffbf1;
+  text-align: center;
+}
+
+a {
+  color: #fffbf1;
+  text-align: center;
+}
+
+nav {
+  color: #fffbf1;
+  text-align: center;
+  list-style-position: inside;
 }
