@@ -2,9 +2,11 @@
   {  
     "title": "A Very Frightful Story",
     "theme": "spooky",
-    "noun": "ghostdog",
+    "animal": "ghostdog",
+    "noun": "cave",
     "verb": "skeletondances",
-    "adjective": "scary",
+    "adjective1": "scary",
+    "adjective2": "terrifying",
     "word": "boo!"
   }
 ]
