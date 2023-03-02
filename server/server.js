@@ -19,7 +19,7 @@ server.set('views', __dirname + '/views')
 // server.use('/theme', router)
 
 server.get('/', (req, res) => {
-  res.send('hi mom!')
+  res.render('home')
 })
 
 module.exports = server
