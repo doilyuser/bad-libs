@@ -1,6 +1,6 @@
 const express = require('express')
 const hbs = require('express-handlebars')
-const fs = require("node:fs/promises")
+const fs = require('node:fs/promises')
 
 const server = express()
 const router = require('./routes')
@@ -16,7 +16,8 @@ server.set('view engine', 'hbs')
 server.set('views', __dirname + '/views')
 
 // Your routes/router(s) should go here
-server.use("/spooky", routes)
+server.use('/create', router)
+server.use('/story', router)
 
 // server.use('/theme', router)
 
