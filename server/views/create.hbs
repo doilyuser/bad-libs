@@ -1,17 +1,18 @@
-<form method="post" action="/create/spooky">
+<form class="form" method="POST" action="/create/:theme">
+
   <label for="adjective">Enter a spooky adjective (describing word):</label>
-  <input type="text" id="adjective">
+  <input type="text" name="adjective"><br>
 
   <label for="noun">Enter a spooky noun (naming word):</label>
-  <input type="text" id="noun">
+  <input type="text" name="noun"><br>
 
   <label for="verb">Enter a spooky verb (doing word, present tense):</label>
-  <input type="text" id="verb">
+  <input type="text" name="verb"><br>
 
   <label for="sound">Enter a spooky exclamation or sound:</label>
-  <input type="text" id="sound">
+  <input type="text" name="sound"><br>
 
-  <button>Create story!</button>
+  <button type="submit">Create story!</button>
 
 </form>
 

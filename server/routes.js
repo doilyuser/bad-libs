@@ -7,13 +7,13 @@ const router = express.Router()
 const data = './server/data/data.json'
 
 router.get('/:theme', (req, res) => {
-  console.log('BOOOOOOOO', req.params)
   const theme = req.params.theme
 
   fs.readFile(data)
     .then((contents) => {
       const parseData = JSON.parse(contents)
-      const storyData = parseData.find((currentTheme) => {
+      console.log(parseData)
+      const storyData = parseData.genres.find((currentTheme) => {
         currentTheme.theme === theme
       })
       res.render('create', storyData)
@@ -25,10 +25,11 @@ router.get('/:theme', (req, res) => {
 
 router.post('/:theme', (req, res) => {
   const theme = req.params.theme
+  console.log(req.body)
   fs.readFile(data)
     .then((contents) => {
       parseData = JSON.parse(contents)
-      const storyData = parseData.find((element) => {
+      const storyData = parseData.genres.find((element) => {
         element.theme === req.params.theme
       })
       console.log('this is the url:', theme)
