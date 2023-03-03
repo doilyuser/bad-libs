@@ -23,7 +23,13 @@ server.use('/story', storyRouter)
 // server.use('/theme', router)
 
 server.get('/', (req, res) => {
-  res.render('home')
+  fs.readFile(__dirname + '/data/data.json')
+    .then((data) => {
+      res.render('home', JSON.parse(data))
+    })
+    .catch((err) => {
+      console.log(err.message)
+    })
 })
 
 module.exports = server

@@ -49,6 +49,7 @@ a {
 nav {
   text-align: center;
   padding: 20px, auto, 20px, auto;
+  margin-top: 10px;
 }
 
 #nav-btn {
@@ -74,13 +75,17 @@ label {
   text-align: center;
   font-family: 'Source Code Pro', monospace;
   padding: 20px, auto, 20px, auto;
+  margin-bottom: 50px;
 }
 
 input {
   background-color: #783d4b;
   color: #fffbf1;
   width: 100px;
-  height: 30px;
+  height: 20px;
+  border: 0px;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
 }
 
 .tenor-gif-embed {
@@ -90,4 +95,21 @@ input {
   margin-bottom: 40px;
   max-width: 300px;
   padding: 20px, auto, 20px, auto;
+}
+
+.form {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #783d4b;
+  color: #fffbf1;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  border: 0px;
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
