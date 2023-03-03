@@ -12,10 +12,12 @@ router.get('/:theme', (req, res) => {
   fs.readFile(data)
     .then((contents) => {
       const parseData = JSON.parse(contents)
-      console.log(parseData)
-      const storyData = parseData.genres.find((currentTheme) => {
-        currentTheme.theme === theme
-      })
+      console.log('This isnt the post', parseData.genres)
+      const storyData = parseData.genres.find(
+        (element) => element.theme === theme
+      )
+
+      console.log('get story data', storyData)
       res.render('create', storyData)
     })
     .catch((err) => {
@@ -25,29 +27,28 @@ router.get('/:theme', (req, res) => {
 
 router.post('/:theme', (req, res) => {
   const theme = req.params.theme
-  console.log(req.body)
   fs.readFile(data)
     .then((contents) => {
       parseData = JSON.parse(contents)
-      const storyData = parseData.genres.find((element) => {
-        element.theme === req.params.theme
-      })
-      console.log('this is the url:', theme)
+      console.log('p ---->', parseData.genres)
+      const storyData = parseData.genres.find(
+        (element) => element.theme === theme
+      )
+      console.log(req.body.noun)
       //change these to match data json
-      const { noun, verb, adjective1, adjective2, animal, word } = req.body
-
+      const { animal, noun, verb, adjective1, adjective2, sound } = req.body
       storyData.noun = noun
       storyData.verb = verb
       storyData.adjective1 = adjective1
       storyData.adjective2 = adjective2
-      storyData.word = word
       storyData.animal = animal
+      storyData.sound = sound
 
       const newData = JSON.stringify(parseData, null, 2)
       console.log(newData)
       fs.writeFile(__dirname + '/data/data.json', newData).then(() => {
-        // res.redirect(302, `/story/${theme}`)
-        res.send('working redirect :)')
+        res.redirect(302, `/story/${theme}`)
+        // res.send('working redirect :)')
         console.log(newData)
       })
     })
