@@ -1,7 +1,13 @@
 <div class="container">
-  {{#each themes}}
+  {{#each genres}}
   <div class="theme-list">
+  {{!-- <div class="theme-img"> --}}
     <a href="/create/{{theme}}"><img class="img-circle" src="/images/{{theme}}.jpg" alt="{{alt}}"></a>
+  </div>
+  <div class="theme-txt">
+    <h2>{{theme}}</h2>
+    <p>{{title}}</p>
+    <p><a href="/create/{{theme}}">Play game</a></p>
   </div>
   {{/each}}
 </div>
