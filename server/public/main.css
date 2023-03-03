@@ -51,6 +51,7 @@ a {
   text-align: center;
   font-family: 'Source Code Pro', monospace;
   padding: 20px, auto, 20px, auto;
+  text-decoration: none;
 }
 
 nav {
@@ -102,6 +103,7 @@ input {
   margin-bottom: 40px;
   max-width: 300px;
   padding: 20px, auto, 20px, auto;
+  border-radius: 20px;
 }
 
 .form {
@@ -119,8 +121,4 @@ button {
   height: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.tenor-gif-embed:hover {
-  pointer-events: none;
 }
