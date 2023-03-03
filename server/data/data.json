@@ -1,48 +1,48 @@
 {
   "genres": [
-  {  
-    "title": "viewer discretion advised",
-    "theme": "spooky",
-    "animal": "ghostdog",
-    "noun": "cave",
-    "verb": "skeletondances",
-    "adjective1": "scary",
-    "adjective2": "terrifying",
-    "sound": "boo!",
-    "alt": "A ghost wearing sunglasses"
-  },
-  {  
-    "title": "a tale of the near-total lawless frontiers",
-    "theme": "cowboy",
-    "animal": "goatdog",
-    "noun": "goat den",
-    "verb": "goat dances",
-    "adjective1": "goaty",
-    "adjective2": "goatifying",
-    "sound": "baaah!",
-    "alt": "A goat"
-  },
-  {  
-    "title": "sugar, spice, and everything nice",
-    "theme": "cute",
-    "animal": "goatdog",
-    "noun": "goat den",
-    "verb": "goat dances",
-    "adjective1": "goaty",
-    "adjective2": "goatifying",
-    "sound": "baaah!",
-    "alt": "A goat"
-  },
-  {  
-    "title": "the greatest story of all time",
-    "theme": "goat",
-    "animal": "goatdog",
-    "noun": "goat den",
-    "verb": "goat dances",
-    "adjective1": "goaty",
-    "adjective2": "goatifying",
-    "sound": "baaah!",
-    "alt": "A goat"
-  }
-]
+    {
+      "title": "viewer discretion advised",
+      "theme": "spooky",
+      "animal": "ghostdog",
+      "noun": "cave",
+      "verb": "skeletondances",
+      "adjective1": "scary",
+      "adjective2": "terrifying",
+      "sound": "boo!",
+      "alt": "A ghost wearing sunglasses"
+    },
+    {
+      "title": "a tale of the near-total lawless frontiers",
+      "theme": "cowboy",
+      "animal": "goatdog",
+      "noun": "goat den",
+      "verb": "goat dances",
+      "adjective1": "goaty",
+      "adjective2": "goatifying",
+      "sound": "baaah!",
+      "alt": "A goat"
+    },
+    {
+      "title": "sugar, spice, and everything nice",
+      "theme": "cute",
+      "animal": "duckling",
+      "noun": "kitten",
+      "verb": "squishes",
+      "adjective1": "sweet",
+      "adjective2": "loverly",
+      "sound": "Peep!",
+      "alt": "A goat"
+    },
+    {
+      "title": "the greatest story of all time",
+      "theme": "goat",
+      "animal": "goatdog",
+      "noun": "goat den",
+      "verb": "goat dances",
+      "adjective1": "goaty",
+      "adjective2": "goatifying",
+      "sound": "baaah!",
+      "alt": "A goat"
+    }
+  ]
 }
