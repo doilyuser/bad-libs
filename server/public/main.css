@@ -10,6 +10,11 @@ html {
   flex-wrap: wrap;
 }
 
+.container {
+  max-width: 250px;
+  margin-left: 50px;
+}
+
 .theme-img {
   display: flex;
   flex-direction: column;
