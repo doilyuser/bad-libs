@@ -1,7 +1,7 @@
 {
   "genres": [
   {  
-    "title": "A Very Frightful Story",
+    "title": "viewer discretion advised",
     "theme": "spooky",
     "animal": "ghostdog",
     "noun": "cave",
@@ -12,7 +12,29 @@
     "alt": "A ghost wearing sunglasses"
   },
   {  
-    "title": "A Very Goat Story",
+    "title": "a tale of the near-total lawless frontiers",
+    "theme": "cowboy",
+    "animal": "goatdog",
+    "noun": "goat den",
+    "verb": "goat dances",
+    "adjective1": "goaty",
+    "adjective2": "goatifying",
+    "sound": "baaah!",
+    "alt": "A goat"
+  },
+  {  
+    "title": "sugar, spice, and everything nice",
+    "theme": "cute",
+    "animal": "goatdog",
+    "noun": "goat den",
+    "verb": "goat dances",
+    "adjective1": "goaty",
+    "adjective2": "goatifying",
+    "sound": "baaah!",
+    "alt": "A goat"
+  },
+  {  
+    "title": "the greatest story of all time",
     "theme": "goat",
     "animal": "goatdog",
     "noun": "goat den",
